@@ -1,5 +1,5 @@
 {
-  "name": "basic-react",
+  "name": "react-basic",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,6 +17,16 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdigunaHakim/react-basic.git"
+  },
+  "author": "adiguna.hakim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdigunaHakim/react-basic/issues"
+  },
+  "homepage": "https://github.com/AdigunaHakim/react-basic#readme",
   "eslintConfig": {
     "extends": [
       "react-app",
