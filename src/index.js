@@ -4,25 +4,30 @@ import SingleComment from "./SingleComment";
 import UserCard from "./UserCard";
 
 const usersData = [
-  { name: "Sarah", comment: "Its Amazing" },
-  { name: "Jack", comment: "Its Amazing" },
-  { name: "Robert", comment: "Its Amazing" },
+  { name: "Sarah", comment: "Its Amazing", date:"Today 5:00 AM" },
+  { name: "Jack", comment: "Thats Good", date:"Today 6:00 AM"  },
+  { name: "Robert", comment: "Awsome....!", date:"Today 7:00 AM"  },
 ];
+
+const Data = () => {
+  return usersData.map((element, index) => {
+    return (
+      <UserCard>
+        <SingleComment key={element.name} name={element.name} comment={element.comment} date={element.date}/>
+      </UserCard>
+    );
+  });
+};
 
 const App = () => {
   return (
     <div className="ui comments">
-      <UserCard>
-        <div>Hello my name is Jack</div>
-        <SingleComment name="Jack" comment="Thats Good" />
-      </UserCard>
-      <SingleComment name="Sarah" comment="Its Amazing" />
-      <SingleComment name="Robert" comment="Awsome" />
+      <Data />
 
-      <div class="ui icon message">
-        <i class="notched circle loading icon"></i>
-        <div class="content">
-          <div class="header">Just one second</div>
+      <div className="ui icon message">
+        <i className="notched circle loading icon"></i>
+        <div className="content">
+          <div className="header">Just one second</div>
           <p>We're fetching that content for you.</p>
         </div>
       </div>

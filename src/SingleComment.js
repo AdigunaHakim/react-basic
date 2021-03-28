@@ -12,11 +12,11 @@ const SingleComment = (hell) => {
           {hell.name}
         </a>
         <div className="metadata">
-          <span> Today 5:00 AM</span>
+          <span>{hell.date}</span>
         </div>
         <div className="text">{hell.comment}</div>
-        <div class="actions">
-          <a class="reply">Reply</a>
+        <div className="actions">
+          <a className="reply">Reply</a>
         </div>
       </div>
     </div>
