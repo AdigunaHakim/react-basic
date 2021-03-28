@@ -1,23 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
+import SingleComment from "./SingleComment";
+
+const usersData = [
+  { name: "Sarah", comment: "Its Amazing" },
+  { name: "Jack", comment: "Its Amazing" },
+  { name: "Robert", comment: "Its Amazing" },
+];
 
 const App = () => {
-    const style = {backgroundColor:'green', color:'white'}
-    const buttonText = 'click me';
+  return (
+    <div className="ui comments">
+      <SingleComment name="Sarah" comment="Its Amazing"/>
+      <SingleComment name="Jack" comment="Thats Good"/>
+      <SingleComment name="Robert" comment="Awsome"/>
 
-    return(
-        <div>
-            <label for="name" className="label"> enter email </label>
-            <input type="text"/>
-            <button style={{backgroundColor:'green', color:'white'}}>
-            { buttonText }
-            </button>
-            <button style={style}>click me</button>
+      <div class="ui icon message">
+        <i class="notched circle loading icon"></i>
+        <div class="content">
+          <div class="header">Just one second</div>
+          <p>We're fetching that content for you.</p>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-ReactDOM.render(
-    <App />, 
-    document.getElementById('root')
-)
+ReactDOM.render(<App />, document.getElementById("root"));
