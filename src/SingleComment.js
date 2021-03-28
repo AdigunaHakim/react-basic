@@ -1,7 +1,7 @@
 import React from "react";
 import picture from "./image/anonim.png";
 
-const SingleComment = (props) => {
+const SingleComment = (hell) => {
   return (
     <div className="comment">
       <a href="/" className="avatar">
@@ -9,12 +9,12 @@ const SingleComment = (props) => {
       </a>
       <div className="content">
         <a href="/" className="author">
-          {props.name}
+          {hell.name}
         </a>
         <div className="metadata">
           <span> Today 5:00 AM</span>
         </div>
-        <div className="text">{props.comment}</div>
+        <div className="text">{hell.comment}</div>
         <div class="actions">
           <a class="reply">Reply</a>
         </div>

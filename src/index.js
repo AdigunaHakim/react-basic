@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import SingleComment from "./SingleComment";
+import UserCard from "./UserCard";
 
 const usersData = [
   { name: "Sarah", comment: "Its Amazing" },
@@ -11,9 +12,12 @@ const usersData = [
 const App = () => {
   return (
     <div className="ui comments">
-      <SingleComment name="Sarah" comment="Its Amazing"/>
-      <SingleComment name="Jack" comment="Thats Good"/>
-      <SingleComment name="Robert" comment="Awsome"/>
+      <UserCard>
+        <div>Hello my name is Jack</div>
+        <SingleComment name="Jack" comment="Thats Good" />
+      </UserCard>
+      <SingleComment name="Sarah" comment="Its Amazing" />
+      <SingleComment name="Robert" comment="Awsome" />
 
       <div class="ui icon message">
         <i class="notched circle loading icon"></i>
