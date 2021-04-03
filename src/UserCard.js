@@ -5,7 +5,7 @@ const UserCard = (props) => {
   return (
     <div className="ui card">
       <div className="content">
-        <div className="header">{props.children.props.name}</div>
+        <div className="header">{props.children.props.name} {' Wilshare'}</div>
         <div className="description">
             { props.children }
         </div>
